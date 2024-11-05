@@ -1,0 +1,33 @@
+password=input("enter a password to run voting machine")
+if(password=='1234'):
+    bjp=0
+    sp=0
+    while True:
+        c=input("for vote enter '1' \nfor check who won press '2' \nfor exit press '3'")
+        if(c=='1'):
+            age=input("enter your age")
+            if(age>='18'):
+                vote=input("enter 1=bjp,,,,,,,2=sp ")
+                if(vote=='1'):
+                    print("you voted bjp")
+                    bjp+=1
+                else:
+                    print("you voted sp ")
+                    sp+=1     
+            else:
+                print("ohhh you age not for vote ")
+        elif(c=='2'):
+            print("bjp got=",bjp)
+            print("sp  got=",sp)
+        elif(c=='3'):
+            print(" exit voting machine")
+            print("thank you for using my mini project")
+            print("made by Abhiraj singh chauhan")
+            break
+        else:
+            print("ohh wrong number")
+else:
+    print("wrong password,: Try again ")
+        
+              
+            
